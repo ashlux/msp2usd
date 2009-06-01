@@ -1,64 +1,50 @@
-//
-//  msp2usdViewController.m
-//  msp2usd
-//
-//  Created by Ash Lux on 5/31/09.
-//  Copyright __MyCompanyName__ 2009. All rights reserved.
-//
-
 #import "msp2usdViewController.h"
 
 @implementation msp2usdViewController
 
+@synthesize pointsTextField;
+@synthesize usdTextField;
 
 
-/*
-// The designated initializer. Override to perform setup that is required before the view is loaded.
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
-    if (self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil]) {
-        // Custom initialization
-    }
-    return self;
+-(IBAction) sourceOnGitHub {
+	[[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"http://github.com/ashlux/msp2usd/tree/master"]];
 }
-*/
 
-/*
-// Implement loadView to create a view hierarchy programmatically, without using a nib.
-- (void)loadView {
-}
-*/
-
-
-/*
-// Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
-- (void)viewDidLoad {
-    [super viewDidLoad];
-}
-*/
-
-
-/*
-// Override to allow orientations other than the default portrait orientation.
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
-    // Return YES for supported orientations
-    return (interfaceOrientation == UIInterfaceOrientationPortrait);
-}
-*/
-
-- (void)didReceiveMemoryWarning {
-	// Releases the view if it doesn't have a superview.
-    [super didReceiveMemoryWarning];
+-(IBAction) convertToPoints {
+	double usd = [usdTextField.text doubleValue];
+	// TODO: ROUND!
+	double points = usd * 80.0; // 80 points per dollar 
 	
-	// Release any cached data, images, etc that aren't in use.
+	UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"USD to Points"
+														message:[NSString stringWithFormat:@"$%@ = %0.2f points", usdTextField.text, points]
+													   delegate:nil
+											  cancelButtonTitle:@"Okay" otherButtonTitles:nil];
+    [alertView show];
+    [alertView release];
 }
 
-- (void)viewDidUnload {
-	// Release any retained subviews of the main view.
-	// e.g. self.myOutlet = nil;
+-(IBAction) convertToDollars {
+	double points = [pointsTextField.text doubleValue];
+	// TODO: ROUND!
+	double usd = points * 0.0125; // 1 point = 0.0125 dollars
+	
+	UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Points to USD"
+														message:[NSString stringWithFormat:@"%@ points = $%0.2f", pointsTextField.text, usd]
+													   delegate:nil
+											  cancelButtonTitle:@"Okay" otherButtonTitles:nil];
+    [alertView show];
+    [alertView release];
 }
 
+- (BOOL)textFieldShouldReturn:(UITextField *)textField {
+	[textField resignFirstResponder];
+	return YES;
+}
 
 - (void)dealloc {
+	[pointsTextField release];
+	[usdTextField release];
+	
     [super dealloc];
 }
 
