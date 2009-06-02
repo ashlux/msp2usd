@@ -269,6 +269,7 @@
 								<string>080E96DDFE201D6D7F000001</string>
 								<string>29B97315FDCFA39411CA2CEA</string>
 								<string>29B97317FDCFA39411CA2CEA</string>
+								<string>29B97323FDCFA39411CA2CEA</string>
 								<string>19C28FACFE9D520D11CA2CBB</string>
 								<string>1C37FBAC04509CD000000102</string>
 								<string>1C37FAAC04509CD000000102</string>
@@ -277,8 +278,8 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>18</integer>
-									<integer>17</integer>
+									<integer>21</integer>
+									<integer>20</integer>
 								</array>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateVisibleRectKey</key>
@@ -301,7 +302,7 @@
 							<real>186</real>
 						</array>
 						<key>RubberWindowFrame</key>
-						<string>1 56 1280 719 0 0 1280 778 </string>
+						<string>1 59 1279 719 0 0 1280 778 </string>
 					</dict>
 					<key>Module</key>
 					<string>PBXSmartGroupTreeModule</string>
@@ -317,7 +318,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>msp2usdViewController.m</string>
+								<string>msp2usdAppDelegate.m</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -325,19 +326,7 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>msp2usdViewController.m</string>
-										<key>_historyCapacity</key>
-										<integer>0</integer>
-										<key>bookmark</key>
-										<string>B4EEBF580FD39F5400FC2D7C</string>
-										<key>history</key>
-										<array>
-											<string>B469B57B0FD3988C00038739</string>
-											<string>B469B57C0FD3988C00038739</string>
-											<string>B469B59A0FD399CE00038739</string>
-											<string>B469B59B0FD399CE00038739</string>
-											<string>B469B5E50FD39EB000038739</string>
-										</array>
+										<string>msp2usdAppDelegate.m</string>
 										<key>prevStack</key>
 										<array>
 											<string>B4C0E35B0FD3692E00A09826</string>
@@ -356,9 +345,9 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 0}, {1072, 500}}</string>
+								<string>{{0, 0}, {1071, 500}}</string>
 								<key>RubberWindowFrame</key>
-								<string>1 56 1280 719 0 0 1280 778 </string>
+								<string>1 59 1279 719 0 0 1280 778 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
@@ -376,9 +365,9 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 505}, {1072, 173}}</string>
+								<string>{{0, 505}, {1071, 173}}</string>
 								<key>RubberWindowFrame</key>
-								<string>1 56 1280 719 0 0 1280 778 </string>
+								<string>1 59 1279 719 0 0 1280 778 </string>
 							</dict>
 							<key>Module</key>
 							<string>XCDetailModule</string>
@@ -387,7 +376,7 @@
 						</dict>
 					</array>
 					<key>Proportion</key>
-					<string>1072pt</string>
+					<string>1071pt</string>
 				</dict>
 			</array>
 			<key>Name</key>
@@ -402,9 +391,9 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
-				<string>B4EEBF530FD39F3000FC2D7C</string>
+				<string>B4359CB50FD40721007B988C</string>
 				<string>1CE0B1FE06471DED0097A5F4</string>
-				<string>B4EEBF540FD39F3000FC2D7C</string>
+				<string>B4359CB60FD40721007B988C</string>
 				<string>1CE0B20306471E060097A5F4</string>
 				<string>1CE0B20506471E060097A5F4</string>
 			</array>
@@ -538,13 +527,15 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
+		<string>B4359CC00FD40753007B988C</string>
+		<string>B4359CC10FD40753007B988C</string>
 		<string>1C78EAAD065D492600B07095</string>
 		<string>1CD10A99069EF8BA00B06720</string>
 		<string>B4C0E3760FD369A400A09826</string>
-		<string>/Users/ashlux/Documents/msp2usd/msp2usd.xcodeproj</string>
+		<string>/Users/ashlux/Documents/Console Points/msp2usd.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
-	<string>1 56 1280 719 0 0 1280 778 </string>
+	<string>1 59 1279 719 0 0 1280 778 </string>
 	<key>WindowToolsV3</key>
 	<array>
 		<dict>
@@ -582,12 +573,10 @@
 							<string>218pt</string>
 						</dict>
 						<dict>
-							<key>BecomeActive</key>
-							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXBuildLogShowsTranscriptDefaultKey</key>
-								<string>{{0, 31}, {500, 205}}</string>
+								<string>{{0, 5}, {500, 231}}</string>
 								<key>PBXProjectModuleGUID</key>
 								<string>XCMainBuildResultsModuleGUID</string>
 								<key>PBXProjectModuleLabel</key>
@@ -625,7 +614,7 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>B4C0E3760FD369A400A09826</string>
-				<string>B4EEBF4F0FD39F2000FC2D7C</string>
+				<string>B4359CB80FD40753007B988C</string>
 				<string>1CD0528F0623707200166675</string>
 				<string>XCMainBuildResultsModuleGUID</string>
 			</array>
@@ -667,8 +656,8 @@
 										<string>yes</string>
 										<key>sizes</key>
 										<array>
-											<string>{{0, 0}, {316, 201}}</string>
-											<string>{{316, 0}, {378, 201}}</string>
+											<string>{{0, 0}, {316, 203}}</string>
+											<string>{{316, 0}, {378, 203}}</string>
 										</array>
 									</dict>
 									<key>VerticalSplitView</key>
@@ -683,8 +672,8 @@
 										<string>yes</string>
 										<key>sizes</key>
 										<array>
-											<string>{{0, 0}, {694, 201}}</string>
-											<string>{{0, 201}, {694, 180}}</string>
+											<string>{{0, 0}, {694, 203}}</string>
+											<string>{{0, 203}, {694, 178}}</string>
 										</array>
 									</dict>
 								</dict>
@@ -717,7 +706,7 @@
 										<real>148</real>
 									</array>
 									<key>Frame</key>
-									<string>{{316, 0}, {378, 201}}</string>
+									<string>{{316, 0}, {378, 203}}</string>
 									<key>RubberWindowFrame</key>
 									<string>21 333 694 422 0 0 1280 778 </string>
 								</dict>
@@ -745,13 +734,13 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>1CD10A99069EF8BA00B06720</string>
-				<string>B4EEBF590FD39F5400FC2D7C</string>
+				<string>B4359CB90FD40753007B988C</string>
 				<string>1C162984064C10D400B95A72</string>
-				<string>B4EEBF5A0FD39F5400FC2D7C</string>
-				<string>B4EEBF5B0FD39F5400FC2D7C</string>
-				<string>B4EEBF5C0FD39F5400FC2D7C</string>
-				<string>B4EEBF5D0FD39F5400FC2D7C</string>
-				<string>B4EEBF5E0FD39F5400FC2D7C</string>
+				<string>B4359CBA0FD40753007B988C</string>
+				<string>B4359CBB0FD40753007B988C</string>
+				<string>B4359CBC0FD40753007B988C</string>
+				<string>B4359CBD0FD40753007B988C</string>
+				<string>B4359CBE0FD40753007B988C</string>
 			</array>
 			<key>ToolbarConfiguration</key>
 			<string>xcode.toolbar.config.debugV3</string>
@@ -913,7 +902,7 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>1C78EAAD065D492600B07095</string>
-				<string>B4EEBF5F0FD39F5400FC2D7C</string>
+				<string>B4359CBF0FD40753007B988C</string>
 				<string>1C78EAAC065D492600B07095</string>
 			</array>
 			<key>ToolbarConfiguration</key>
