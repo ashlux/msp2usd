@@ -32,7 +32,5 @@
 -(IBAction) selectJPY;
 -(IBAction) selectUSD;
 
--(IBAction) sourceOnGitHub;
-
 @end
 

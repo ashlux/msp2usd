@@ -30,29 +30,29 @@ double ratePointsToCurrency;
 
 -(IBAction) selectCAD {
 	selectedCurrency = @"CAD";
-	rateCurrencyToPoints = 0.0155;
-	ratePointsToCurrency =  64.516129;
+	rateCurrencyToPoints = 0.0142857143;
+	ratePointsToCurrency =  70.0;
 	[self setUiForCurrency:selectedCurrency];
 }
 
 -(IBAction) selectEUR {
 	selectedCurrency = @"EUR";
-	rateCurrencyToPoints = 0.012;
-	ratePointsToCurrency = 83.333333;
+	rateCurrencyToPoints = 0.0119047619;
+	ratePointsToCurrency = 84.0;
 	[self setUiForCurrency:selectedCurrency];
 }
 
 -(IBAction) selectGBP {
 	selectedCurrency = @"GBP";
-	rateCurrencyToPoints = 0.0085;
-	ratePointsToCurrency = 117.647059;
+	rateCurrencyToPoints = 0.00833333333;
+	ratePointsToCurrency = 120;
 	[self setUiForCurrency:selectedCurrency];
 }
 
 -(IBAction) selectJPY {
 	selectedCurrency = @"JPY";
-	rateCurrencyToPoints = 1.48;
-	ratePointsToCurrency = 0.675675;
+	rateCurrencyToPoints = 1.87;
+	ratePointsToCurrency = 0.534759358;
 	[self setUiForCurrency:selectedCurrency];
 }
 
@@ -93,10 +93,6 @@ double ratePointsToCurrency;
 	[defaults synchronize];
 	
 	[super viewWillDisappear:animated];
-}
-
--(IBAction) sourceOnGitHub {
-	[[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"http://github.com/ashlux/msp2usd/tree/master"]];
 }
 
 -(IBAction) convertToPoints {
